@@ -81,7 +81,8 @@ void get_data(const char* data) {
     } else if (resultado == 0) {
         printf("Apagando el LED.\n");
         // Apagar el LED
-        gpio_set_level(LED_GPIO, 0); // Activar para apagar el LED
+         gpio_set_level(LED_GPIO4, 1); // Activar para encender el LED
+    
     } else {
         printf("Valor de resultado no reconocido.\n");
     }
@@ -103,7 +104,10 @@ static void callback_wifi_connected(){
 
 static void led_config(){
     gpio_set_direction(LED_GPIO, GPIO_MODE_OUTPUT);
+        gpio_set_direction(LED_GPIO4, GPIO_MODE_OUTPUT);
+
     gpio_set_level(LED_GPIO,0);
+    gpio_set_level(LED_GPIO4,0);
 }
 
 
@@ -119,6 +123,7 @@ int app_main()
     while(1) {
         if (!tarjeta_detectada) {
             gpio_set_level(LED_GPIO, 0); // Apaga el LED si la tarjeta no está presente
+            gpio_set_level(LED_GPIO4, 0);
         }
         vTaskDelay(5000 / portTICK_PERIOD_MS);
     }
@@ -126,3 +131,4 @@ int app_main()
    
     return 0;
 }
+//nicolas
