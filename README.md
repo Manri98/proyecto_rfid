@@ -45,7 +45,7 @@ El archivo `config.h` define las siguientes configuraciones:
 #endif
 ```
 ## Esp32-pinout  
-La placa utilizada para realizar las pruebas tiene la siguiente distribución de pines, en particular esta placa consta de 36 pines, distruidas en hileras de 18 pines, en ambos lados.
+La placa utilizada para realizar las pruebas tiene la siguiente distribución de pines, en particular esta placa cuenta con 36 pines, distruidas en hileras de 18 pines en ambos lados.
 
 ![pinout_esp32](./imgs/esp32-36-pin-pinout.jpg)
 
@@ -60,7 +60,7 @@ La placa utilizada para realizar las pruebas tiene la siguiente distribución de
 
 ## Prototipo en PCB.
 ![prototipo-en-PCB](./imgs/pcb-frontal.jpeg)
-###### Nota: Este PCB tambien funciona con el esp32 de 30 pines, ya que cuenta con la adaptacion adecuada. Cuenta con dos jumper para realizar corectamente la distribucion de los pines.
+###### Nota: Este PCB tambien funciona con el esp32 de 30 pines, ya que cuenta con la adaptacion adecuada. Cuenta con dos jumper para realizar correctamente la distribucion de los pines.
 
 ## Funcionamiento.
 ![funcionamiento](./imgs/marcha.gif)
